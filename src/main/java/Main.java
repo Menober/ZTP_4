@@ -9,6 +9,10 @@ public class Main {
             pizza.show();
             System.out.println();
         }
+
+        Pizza pizza = Pizzeria.getPizza("grube", "pomidorowy", 42);
+        pizza.show();
+        System.out.println();
     }
 
     private static String losujCiasto() {
@@ -36,7 +40,7 @@ public class Main {
         }
     }
     private static int losujSrednice() {
-       return new Random().nextInt(15)+28;
+       return new Random().nextInt(17)+26;
     }
 
 
